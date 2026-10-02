@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<meta http-equiv="X-Content-Type-Options" content="nosniff">
+<meta http-equiv="X-Frame-Options" content="DENY">
+<meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=()">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data: https://placehold.co; style-src 'self' 'unsafe-inline'; script-src 'self'; object-src 'none'; base-uri 'self'; frame-ancestors 'none'; form-action 'self';">
+<title>M.E BEBIDAS</title>
+<style>
+:root{--bg:#050607;--card:#101316;--line:#2a2e32;--yellow:#ffd400;--white:#f7f7f7;--muted:#a9adb2}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--white);font-family:Arial,Helvetica,sans-serif}
+a{text-decoration:none;color:inherit}.top{padding:18px 6%;display:flex;gap:28px;align-items:center;border-bottom:1px solid var(--line);position:sticky;top:0;background:#050607ee;backdrop-filter:blur(10px);z-index:5}
+.logo{font-size:28px;font-weight:900;line-height:.8;color:var(--yellow)}.logo span{display:block;color:#fff;font-size:18px;margin-top:7px}
+.search{flex:1;display:flex;background:#fff;border-radius:28px;overflow:hidden}.search input{flex:1;border:0;padding:15px 18px;font-size:15px;outline:0}.search button{width:60px;border:0;background:var(--yellow);font-size:22px}
+.toplinks{display:flex;gap:18px;font-size:13px}.toplinks b{color:var(--yellow)}
+.nav{display:flex;gap:10px;padding:10px 6%;overflow:auto;border-bottom:1px solid var(--line)}.nav a{padding:11px 17px;border-radius:9px;white-space:nowrap}.nav a:first-child{background:var(--yellow);color:#111;font-weight:800}
+.hero{margin:20px auto;max-width:1200px;min-height:390px;border-radius:18px;padding:55px;display:flex;align-items:center;background:linear-gradient(90deg,#050607 0%,#050607c9 42%,#05060735),radial-gradient(circle at 75% 50%,#363a3d,#090a0b 55%);border:1px solid var(--line)}
+.hero h1{font-size:54px;margin:0 0 10px;color:var(--yellow);letter-spacing:-2px}.hero h1 span{color:#fff}.hero p{font-size:19px;color:#ddd;max-width:520px}.btn{display:inline-block;background:var(--yellow);color:#111;font-weight:800;padding:14px 22px;border-radius:9px;margin-top:12px}
+.wrap{max-width:1200px;margin:0 auto;padding:0 20px}.title{display:flex;justify-content:space-between;align-items:end;margin:30px 0 16px}.title h2{margin:0;font-size:25px}.title a{color:var(--yellow);font-size:14px}
+.categories,.products{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}.cat,.product{background:var(--card);border:1px solid var(--line);border-radius:13px;padding:16px}.cat{text-align:center;min-height:105px;display:flex;flex-direction:column;justify-content:center}.cat .icon{font-size:30px}.cat b{margin-top:8px}.product img{width:100%;height:170px;object-fit:contain;background:#08090a;border-radius:10px}.product h3{font-size:15px;margin:12px 0 7px}.price{font-size:20px;color:var(--yellow);font-weight:900}.buy{width:100%;border:0;background:var(--yellow);color:#111;padding:11px;border-radius:8px;font-weight:800;margin-top:10px;cursor:pointer}
+.strip{margin:35px 0;background:#0b0d0f;border-top:1px solid var(--yellow);border-bottom:1px solid var(--yellow);padding:22px;display:grid;grid-template-columns:repeat(4,1fr);gap:15px;text-align:center}.strip strong{display:block;margin-bottom:5px}.strip span{color:var(--muted);font-size:13px}
+footer{border-top:1px solid var(--line);margin-top:40px;padding:35px 6%;display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:30px;color:var(--muted)}footer h3{color:#fff;margin-top:0}.footerlogo{font-size:25px;color:var(--yellow);font-weight:900}.cart{position:fixed;right:20px;bottom:20px;background:var(--yellow);color:#111;padding:15px 20px;border-radius:30px;font-weight:900;box-shadow:0 8px 30px #0008}
+@media(max-width:800px){.toplinks{display:none}.hero{padding:30px;min-height:300px}.hero h1{font-size:40px}.categories{grid-template-columns:repeat(2,1fr)}.products{grid-template-columns:repeat(2,1fr)}.strip{grid-template-columns:repeat(2,1fr)}footer{grid-template-columns:1fr 1fr}.product img{height:130px}}
+</style>
+</head>
+<body>
+<header class="top">
+  <div class="logo">M.E <span>BEBIDAS</span></div>
+  <div class="search"><input placeholder="O que você está procurando?"><button>⌕</button></div>
+  <div class="toplinks"><span>💬 <b>WhatsApp</b></span><span>👤 Minha conta</span><span>🛒 Carrinho</span></div>
+</header>
+<nav class="nav"><a href="#">⌂ Início</a><a href="#categorias">🥤 Refrigerantes</a><a href="#categorias">💧 Águas</a><a href="#categorias">⚡ Energéticos</a><a href="#categorias">🧃 Sucos</a><a href="#combos">📦 Combos</a></nav>
+
+<section class="hero">
+  <div><h1>M.E <span>BEBIDAS</span></h1><p>Bebidas geladas e qualidade para sua festa. Encontre seus produtos favoritos em poucos cliques.</p><a class="btn" href="#produtos">Ver produtos</a></div>
+</section>
+
+<main class="wrap">
+<section id="categorias"><div class="title"><h2>Categorias</h2></div>
+<div class="categories">
+  <div class="cat"><div class="icon">🥤</div><b>Refrigerantes</b></div><div class="cat"><div class="icon">💧</div><b>Águas</b></div>
+  <div class="cat"><div class="icon">⚡</div><b>Energéticos</b></div><div class="cat"><div class="icon">🧃</div><b>Sucos</b></div>
+  <div class="cat" id="combos"><div class="icon">📦</div><b>Combos</b></div>
+</div></section>
+
+<section id="produtos"><div class="title"><h2>Produtos em destaque</h2><a href="#">Ver todos →</a></div>
+<div class="products">
+  <article class="product"><img src="https://placehold.co/500x500/111/fff?text=Coca-Cola+2L"><h3>Coca-Cola 2L</h3><div class="price">R$ 8,00</div><button class="buy">🛒 Adicionar</button></article>
+  <article class="product"><img src="https://placehold.co/500x500/111/fff?text=Guarana+2L"><h3>Guaraná 2L</h3><div class="price">R$ 7,00</div><button class="buy">🛒 Adicionar</button></article>
+  <article class="product"><img src="https://placehold.co/500x500/111/fff?text=Red+Bull"><h3>Energético 250ml</h3><div class="price">R$ 12,00</div><button class="buy">🛒 Adicionar</button></article>
+  <article class="product"><img src="https://placehold.co/500x500/111/fff?text=Agua+500ml"><h3>Água 500ml</h3><div class="price">R$ 3,00</div><button class="buy">🛒 Adicionar</button></article>
+  <article class="product"><img src="https://placehold.co/500x500/111/fff?text=Suco"><h3>Suco de frutas</h3><div class="price">R$ 6,00</div><button class="buy">🛒 Adicionar</button></article>
+</div></section>
+
+<div class="strip">
+  <div><strong>📲 Pedido pelo WhatsApp</strong><span>Atendimento rápido</span></div>
+  <div><strong>❄️ Bebidas geladas</strong><span>Qualidade e variedade</span></div>
+  <div><strong>💳 Pix e cartão</strong><span>Pagamento facilitado</span></div>
+  <div><strong>🚚 Entrega</strong><span>Consulte sua região</span></div>
+</div>
+</main>
+
+<footer>
+  <div><div class="footerlogo">M.E BEBIDAS</div><p>Qualidade, variedade e praticidade para seu pedido.</p></div>
+  <div><h3>Loja</h3><p>Início</p><p>Produtos</p><p>Combos</p></div>
+  <div><h3>Atendimento</h3><p>WhatsApp</p><p>Horários</p><p>Entrega</p></div>
+  <div><h3>Pagamento</h3><p>Pix</p><p>Cartão</p><p>Dinheiro</p></div>
+</footer>
+<div class="cart">🛒 Carrinho — R$ 0,00</div>
+</body></html>
